@@ -4,7 +4,7 @@ import csv
 
 if len(sys.argv) == 2:
     if sys.argv[1].endswith('.csv'):
-        filename = "analytics_customer.csv"
+        filename = sys.argv[1]
         data = list()
         with  open(filename, 'r', encoding='utf-8-sig') as data:  
             reader = csv.DictReader(data)
